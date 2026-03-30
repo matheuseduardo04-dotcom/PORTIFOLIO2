@@ -28,4 +28,4 @@ Estou em constante evolução, explorando novas tecnologias e aprimorando minhas
 ## 📫 Contato
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-eduardo-6a71463b0/)
-[![GitHub](https://img.shields.io/badge/Git]
+[![GitHub](https://img.shields.io/badge/Git
