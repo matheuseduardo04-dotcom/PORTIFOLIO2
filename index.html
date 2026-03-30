@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Portfólio de Matheus Eduardo, desenvolvedor Back-End focado em Python, SQL, automacao e IA."
+  >
+  <title>Matheus Eduardo | Back-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Syne:wght@400;600;700;800&amp;display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-logo" href="#hero">MATHEUS</a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#tech">Stack</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <section id="hero" class="section hero">
+      <div class="hero-tag">Back-End Developer</div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-name">
+            Matheus
+            <span>Eduardo</span>
+          </h1>
+          <p class="hero-role">
+            <span id="typed-text"></span>
+            <span class="cursor" aria-hidden="true"></span>
+          </p>
+          <p class="hero-desc">
+            Desenvolvedor Back-End movido pela curiosidade de entender como sistemas pensam,
+            processam e decidem. Mergulho fundo em <strong>lógica de programação</strong>,
+            exploro <strong>análise de dados</strong>, construo <strong>automações</strong>
+            e sigo estudando <strong>Inteligência Artificial</strong> para criar soluções
+            mais inteligentes.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Ver projetos</a>
+            <a class="button button-secondary" href="#contact">Entrar em contato</a>
+          </div>
+        </div>
+
+        <aside class="hero-media" aria-label="Foto de Matheus Eduardo">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-stack">
+              <img
+                class="hero-photo hero-photo-main"
+                src="assets/foto-1.jpg"
+                alt="Foto de Matheus Eduardo"
+                loading="eager"
+                decoding="async"
+              >
+              <img
+                class="hero-photo hero-photo-glitch hero-photo-glitch-red"
+                src="assets/foto-1.jpg"
+                alt=""
+                aria-hidden="true"
+              >
+              <img
+                class="hero-photo hero-photo-glitch hero-photo-glitch-cyan"
+                src="assets/foto-1.jpg"
+                alt=""
+                aria-hidden="true"
+              >
+            </div>
+            <div class="hero-photo-scan" aria-hidden="true"></div>
+            <div class="hero-photo-noise" aria-hidden="true"></div>
+          </div>
+          <p class="hero-photo-caption">sinal estabilizado</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-label">// 01. sobre mim</div>
+      <div class="section-line"></div>
+      <h2 class="section-title">Quem sou eu</h2>
+
+      <div class="about-text">
+        <p>
+          Olá! Sou <strong>Matheus Eduardo</strong>, desenvolvedor Back-End em constante
+          evolucão. Busco conhecimento em múltiplas tecnologias, combinando a graduacao na
+          <strong>UNICIVE</strong> com cursos especializados.
+        </p>
+        <p>
+          Tenho investido em certificações e estudos como <strong>IA Generativa pelo
+          Google</strong> e <strong>SQL pela Hotmart</strong>, sempre com foco em construir
+          soluções mais inteligentes, práticas e organizadas.
+        </p>
+        <p>
+          Atualmente também aprofundo meus estudos em <strong>Git &amp; GitHub</strong>,
+          porque código bom também precisa ser versionado, colaborativo e bem cuidado.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card reveal-card">
+          <div class="stat-number">2+</div>
+          <div class="stat-label">Projetos</div>
+        </article>
+        <article class="stat-card reveal-card">
+          <div class="stat-number">+500</div>
+          <div class="stat-label">Conexões</div>
+        </article>
+        <article class="stat-card reveal-card">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Tecnologias</div>
+        </article>
+        <article class="stat-card reveal-card">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Aprendizado</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tech" class="section">
+      <div class="section-label">// 02. tecnologias</div>
+      <div class="section-line"></div>
+      <h2 class="section-title">Stack em foco</h2>
+
+      <div class="tech-grid">
+        <article class="tech-card reveal-card">
+          <div class="tech-icon">
+            <svg viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="pyTop" x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%">
+                  <stop offset="0%" stop-color="#387EB8"></stop>
+                  <stop offset="100%" stop-color="#366994"></stop>
+                </linearGradient>
+                <linearGradient id="pyBot" x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%">
+                  <stop offset="0%" stop-color="#FFE052"></stop>
+                  <stop offset="100%" stop-color="#FFC331"></stop>
+                </linearGradient>
+              </defs>
+              <path fill="url(#pyTop)" d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zm-34.74 19.978a11.56 11.56 0 0 1 11.573 11.573 11.56 11.56 0 0 1-11.573 11.572 11.56 11.56 0 0 1-11.572-11.572A11.56 11.56 0 0 1 92.176 20.05z"></path>
+              <path fill="url(#pyBot)" d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.74-19.978a11.56 11.56 0 0 1-11.573-11.572 11.56 11.56 0 0 1 11.573-11.573 11.56 11.56 0 0 1 11.572 11.573 11.56 11.56 0 0 1-11.572 11.572z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="tech-name">Python</div>
+            <div class="tech-desc">Automação, lógica de programação, APIs e dados.</div>
+            <span class="tech-badge">Principal</span>
+          </div>
+        </article>
+
+        <article class="tech-card reveal-card">
+          <div class="tech-icon">
+            <svg viewBox="0 0 432 432" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path fill="#336791" d="M322.7 233.4c4.5-44.8-.5-60.7-3.9-65.8l-.6-.9c-7.7-11.5-16.3-17.5-26.2-17.9-9.2-.4-17.2 3.4-23 5.8a81 81 0 0 1-10.6 3.7c.6-4.4 1-8.9 1.2-13.3.6-16.3-1.7-30.4-6.9-42-14-31.5-41.5-47.4-81.7-47.3C148.6 57.9 128 65 113 79.7c-15.2 14.9-22.4 36.3-21.6 63.5.2 7.9.9 13.4.9 13.4-3.5-.8-7.1-1.6-10.5-2.3-10.5-2.2-20.5-2.9-29.7-.2C37 159.2 29 170.4 24.7 188c-10.6 43.5 6.9 89.3 48.6 117.7 19.8 13.5 40.9 19.7 51.7 21.9 7.3 1.4 13.5 1.6 18.3.4l1.2-.3c2.1-.5 5.1-1.3 8.8-2.2 9.5-2.5 25.3-6.7 33.6-5.4 10.8 1.8 21.3 4.6 31.4 7.3 8.3 2.2 16.9 4.5 25.5 5.9 4.9.8 9.8 1.2 14.6 1.2 12.5 0 24.5-2.8 35.6-10.1 18.1-11.9 29.8-32.7 34.8-62 2.2-12.5 4.2-24.7-6.1-31.4z"></path>
+              <path fill="#FFFFFF" d="M307.4 271.8c-3.4 19.5-10.6 33.7-21.9 41-17.4 11.5-40.3 7.5-60.2 2-10.5-2.8-21.4-5.7-32.8-7.6-14.3-2.4-32.8 2.5-44.1 5.5-3.6.9-6.7 1.7-9 2.3-5.7 1.4-15.6-.3-27.8-2.7-9-1.7-28.4-7.4-45.8-19.2-36.4-24.9-52-64.8-43-101.5 3.2-13.1 8.8-20.4 17.9-22.9 7.1-2 15.7-1.2 25.8 1 4.4 1 8.9 2 13.5 3.1-.5-7.4-1.4-18.2-1.8-30.6-.7-24.1 5.3-42.6 17.9-55 12.6-12.3 30.7-18.5 53.8-18.5h.2c35.2-.1 57.9 13.1 69.8 39.9 4.4 9.9 6.5 22 5.9 36.1-.3 7-.9 13.9-2 20.5l-.6 3.8 3.8-.7c4.1-.8 7.7-2.1 11.7-3.7 5.6-2.3 11.9-4.8 18.8-4.5 6.3.2 12.1 4 17.7 11.7 2.1 3 6.5 14.5 2.3 57z"></path>
+              <path fill="#336791" d="M239.7 172.8c-.7 4.1-1.6 8.2-2.7 12.2-5.6-1.1-11.4-1.6-17.2-1.5-20.2.4-38.3 7.8-47.2 19.2-5.2 6.7-6.7 14.1-4.2 21.2 4.6 13.1 20.8 20.7 44.2 20.8h.7c17.7 0 32.2-4.4 41.6-12.7 8.5-7.5 11.7-17.3 9.4-27.8l-.1-.5c1.6-13.2 1.3-27.4-1.7-40.1 4.2 1.5 6.7 4.5 6.1 11.7-.7 6.5-2.9 15.2-3.4 21.3 1.9 8.8-.5 16.9-7 23.7-8.7 9.2-23.5 14.6-41.4 14.8h-1.3c-19.8.1-32.7-5.7-36.2-16-1.7-5-.5-10.3 3.4-15.2 7.3-9.4 23.1-15.6 40.6-16 6.2-.1 12.4.4 18.4 1.9z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="tech-name">SQL</div>
+            <div class="tech-desc">Bancos relacionais e consultas.</div>
+            <span class="tech-badge">Estudando</span>
+          </div>
+        </article>
+
+        <article class="tech-card reveal-card">
+          <div class="tech-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00FF88"></stop>
+                  <stop offset="100%" stop-color="#00CFFF"></stop>
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="50" r="10" fill="url(#aiGrad)" opacity="0.9"></circle>
+              <circle cx="20" cy="25" r="6" fill="url(#aiGrad)" opacity="0.7"></circle>
+              <circle cx="80" cy="25" r="6" fill="url(#aiGrad)" opacity="0.7"></circle>
+              <circle cx="20" cy="75" r="6" fill="url(#aiGrad)" opacity="0.7"></circle>
+              <circle cx="80" cy="75" r="6" fill="url(#aiGrad)" opacity="0.7"></circle>
+              <circle cx="50" cy="10" r="5" fill="url(#aiGrad)" opacity="0.6"></circle>
+              <circle cx="50" cy="90" r="5" fill="url(#aiGrad)" opacity="0.6"></circle>
+              <circle cx="10" cy="50" r="5" fill="url(#aiGrad)" opacity="0.6"></circle>
+              <circle cx="90" cy="50" r="5" fill="url(#aiGrad)" opacity="0.6"></circle>
+              <line x1="50" y1="40" x2="20" y2="25" stroke="url(#aiGrad)" stroke-width="1.5" opacity="0.5"></line>
+              <line x1="50" y1="40" x2="80" y2="25" stroke="url(#aiGrad)" stroke-width="1.5" opacity="0.5"></line>
+              <line x1="50" y1="60" x2="20" y2="75" stroke="url(#aiGrad)" stroke-width="1.5" opacity="0.5"></line>
+              <line x1="50" y1="60" x2="80" y2="75" stroke="url(#aiGrad)" stroke-width="1.5" opacity="0.5"></line>
+              <line x1="40" y1="50" x2="10" y2="50" stroke="url(#aiGrad)" stroke-width="1.5" opacity="0.5"></line>
+              <line x1="60" y1="50" x2="90" y2="50" stroke="url(#aiGrad)" stroke-width="1.5" opacity="0.5"></line>
+              <line x1="50" y1="40" x2="50" y2="15" stroke="url(#aiGrad)" stroke-width="1.5" opacity="0.5"></line>
+              <line x1="50" y1="60" x2="50" y2="85" stroke="url(#aiGrad)" stroke-width="1.5" opacity="0.5"></line>
+              <line x1="20" y1="25" x2="10" y2="50" stroke="url(#aiGrad)" stroke-width="1" opacity="0.3"></line>
+              <line x1="80" y1="25" x2="90" y2="50" stroke="url(#aiGrad)" stroke-width="1" opacity="0.3"></line>
+              <line x1="20" y1="75" x2="10" y2="50" stroke="url(#aiGrad)" stroke-width="1" opacity="0.3"></line>
+              <line x1="80" y1="75" x2="90" y2="50" stroke="url(#aiGrad)" stroke-width="1" opacity="0.3"></line>
+            </svg>
+          </div>
+          <div>
+            <div class="tech-name">Gen AI</div>
+            <div class="tech-desc">LLMs, prompts e automacao com IA.</div>
+            <span class="tech-badge">Explorando</span>
+          </div>
+        </article>
+
+        <article class="tech-card reveal-card">
+          <div class="tech-icon">
+            <svg viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path fill="#F05032" d="M90.156 41.965L50.036 1.848a5.918 5.918 0 00-8.37 0L33.25 10.26l10.57 10.57a7.027 7.027 0 018.887 8.948l10.184 10.184a7.028 7.028 0 11-4.218 4.02L48.544 33.863v26.561a7.03 7.03 0 11-5.772-.172V33.398a7.029 7.029 0 01-3.817-9.23L28.438 13.629 1.845 40.221a5.92 5.92 0 000 8.372l40.12 40.116a5.92 5.92 0 008.37 0l39.82-39.818a5.924 5.924 0 000-8.926"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="tech-name">Git</div>
+            <div class="tech-desc">Versionamento e organização de código.</div>
+            <span class="tech-badge">Estudando</span>
+          </div>
+        </article>
+
+        <article class="tech-card reveal-card">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path fill="#FFFFFF" d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="tech-name">GitHub</div>
+            <div class="tech-desc">Repositórios, colaboração e portfólio.</div>
+            <span class="tech-badge">Estudando</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-label">// 03. projetos</div>
+      <div class="section-line"></div>
+      <h2 class="section-title">PROJETOS EM DESTAQUES</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://github.com/matheuseduardo04-dotcom"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card reveal-card"
+        >
+          <div class="project-num">01 - PROJETO</div>
+          <h3 class="project-title">Automação com Python</h3>
+          <p class="project-desc">
+            Scripts para automação de tarefas repetitivas, otimizando processos e
+            aumentando produtividade.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Automação</span>
+            <span class="tag">Scripts</span>
+          </div>
+          <div class="project-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
+            </svg>
+            Ver no GitHub
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/matheuseduardo04-dotcom/automacao-python"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card reveal-card"
+        >
+          <div class="project-num">02 - PROJETO</div>
+          <h3 class="project-title">IA e Previsões</h3>
+          <p class="project-desc">
+            IA para previsão de score de crédito. Análise de dados com Pandas, treinamento de modelos com Scikit-learn (Random Forest 83% acurácia). Automação de previsões para novos clientes.
+
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Dados</span>
+            <span class="tag">IA</span>
+            <span class="tag">Automação</span>
+          </div>
+          <div class="project-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
+            </svg>
+            Ver no GitHub
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-label">// 04. contato</div>
+      <div class="section-line"></div>
+
+      <div class="contact-inner">
+        <h2 class="contact-title">Vamos conversar?</h2>
+        <p class="contact-sub">Disponivel para oportunidades e conexoes na area</p>
+
+        <div class="social-links">
+          <a
+            href="https://wa.me/5543996353642"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link reveal-card"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+            </svg>
+            WhatsApp
+          </a>
+
+          <a
+            href="https://github.com/matheuseduardo04-dotcom"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link reveal-card"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
+            </svg>
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/matheus-eduardo-6a71463b0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link reveal-card"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year">2026</span> Matheus Eduardo - Todos os direitos reservados</p>
+    <div class="footer-status">
+      <div class="status-dot"></div>
+      Disponivel para oportunidades
+    </div>
+  </footer>
+
+  <script>
+    document.body.classList.add('js-enabled');
+
+    const currentYear = document.getElementById('current-year');
+    if (currentYear) {
+      currentYear.textContent = new Date().getFullYear();
+    }
+
+    const typedText = document.getElementById('typed-text');
+    const phrases = [
+      'Python Developer',
+      'Back-End Engineer',
+      'SQL Enthusiast',
+      'Gen AI Explorer',
+      'Problem Solver',
+    ];
+
+    if (typedText) {
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let deleting = false;
+
+      const typeLoop = () => {
+        const phrase = phrases[phraseIndex];
+
+        if (deleting) {
+          charIndex -= 1;
+        } else {
+          charIndex += 1;
+        }
+
+        typedText.textContent = phrase.slice(0, charIndex);
+
+        if (!deleting && charIndex === phrase.length) {
+          deleting = true;
+          setTimeout(typeLoop, 1800);
+          return;
+        }
+
+        if (deleting && charIndex === 0) {
+          deleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+
+        setTimeout(typeLoop, deleting ? 55 : 95);
+      };
+
+      setTimeout(typeLoop, 700);
+    }
+
+    const revealCards = document.querySelectorAll('.reveal-card');
+    if ('IntersectionObserver' in window && revealCards.length > 0) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+
+      revealCards.forEach((card) => observer.observe(card));
+    } else {
+      revealCards.forEach((card) => card.classList.add('is-visible'));
+    }
+
+    const canvas = document.getElementById('matrix-canvas');
+    const context = canvas ? canvas.getContext('2d') : null;
+
+    if (canvas && context) {
+      const chars = 'PYTHONSQLGENAIABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&{}[]<>/\\\\~';
+      let fontSize = window.innerWidth < 480 ? 12 : 15;
+      let columns = 0;
+      let drops = [];
+
+      const resizeCanvas = () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        fontSize = window.innerWidth < 480 ? 12 : 15;
+        columns = Math.floor(canvas.width / fontSize);
+        drops = Array.from({ length: columns }, () => Math.random() * -(canvas.height / fontSize));
+      };
+
+      const drawMatrix = () => {
+        context.fillStyle = 'rgba(6, 10, 14, 0.18)';
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.font = `bold ${fontSize}px "Space Mono", monospace`;
+
+        for (let index = 0; index < columns; index += 1) {
+          const char = chars[Math.floor(Math.random() * chars.length)];
+          const random = Math.random();
+
+          if (random > 0.95) {
+            context.fillStyle = '#FFFFFF';
+          } else if (random > 0.75) {
+            context.fillStyle = '#00FF88';
+          } else {
+            context.fillStyle = `rgba(0, 180, 80, ${0.2 + Math.random() * 0.5})`;
+          }
+
+          context.fillText(char, index * fontSize, drops[index] * fontSize);
+
+          if (drops[index] * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[index] = 0;
+          }
+
+          drops[index] += 0.6;
+        }
+      };
+
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+      window.setInterval(drawMatrix, 40);
+    }
+  </script>
+</body>
+</html>
